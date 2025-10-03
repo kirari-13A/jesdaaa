@@ -1,0 +1,103 @@
+body{
+    
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+#photo{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+.container{
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 400px;
+    height: 600px;
+   background-image: url("photo_2025-10-04_00-15-55.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    animation: rotha 2s ease-in-out infinite; 
+}
+.container p{
+    text-align: center;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+.img
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+#photo {
+    border-radius: 50%;
+    animation: rotha 2s ease-in-out infinite; /* smoother motion */
+}
+
+@keyframes rotha {
+    0% {
+        transform: translateY(0);   /* start position */
+    }
+    50% {
+        transform: translateY(-20px); /* move up */
+    }
+    100% {
+        transform: translateY(0);   /* back to start */
+    }
+}
+.span{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+.span button
+{
+    padding: 30px;
+    background-color: beige;
+    border-radius: 30px;
+    color: rgb(161, 155, 155);
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.span button:hover{
+    color: rgb(188, 157, 100);
+    text-decoration: underline;
+}
+button:hover{
+    font-size: 35px;
+}
+.span button , .container p{
+ animation: jesda 2s ease-in-out infinite;    
+}
+
+@keyframes jesda {
+    
+    25%
+    {
+        transform: translateX(-20px);
+    }
+    50%
+    {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(20px);   /* back to start */
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}

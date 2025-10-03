@@ -6,7 +6,7 @@ let yesattempt = 0;
 let noattempt = 0;
 
 let userInput1 = window.alert("Note: Click Yes for 2 times😍");
-let userInput2 = window.alert("Click `No` if you want. ")
+let userInput2 = window.alert("Click `No` if you want 😡. ")
 button1.addEventListener("click", ()=>
 {
     yesattempt++;
@@ -37,4 +37,5 @@ button2.addEventListener("click", () =>
     button2.style.opacity=0;
    }
 })
+
 
